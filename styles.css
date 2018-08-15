@@ -1,0 +1,17 @@
+.col-lg-12{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-bottom: 500px;
+}
+.col-sm-6{
+    display: flex;
+    justify-content: center;
+    background-size: 50px;
+    background-color: red;
+    color:white;
+    background-position: 15px;
+}
+body{
+    background-color: lightblue;
+}
