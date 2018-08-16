@@ -1,4 +1,4 @@
-let rateKey;
+
 
 axios.get('https://api.exchangeratesapi.io/latest')
   .then(function (result) {
@@ -11,10 +11,14 @@ axios.get('https://api.exchangeratesapi.io/latest')
         document.querySelector('select').appendChild(option)
     }
     var button = document.querySelector('button')
-button.addEventListener('click', function(){
-    document.querySelector('.theirMoney').value = parseInt(document.querySelector('.urMoney').value) * rateKey
+    button.addEventListener('click', function(){
+        var e = document.querySelector("select");
+        var selectedExchange = e.options[e.selectedIndex].value;
+        document.querySelector('.theirMoney').value = parseFloat(document.querySelector('.urMoney').value) * parseFloat(selectedExchange)
+        // console.log(result.data.rates[selectedExchange])
+    })
+  
 })
-  })
   
 // var button = document.querySelector('button')
 // button.addEventListener('click', function(){

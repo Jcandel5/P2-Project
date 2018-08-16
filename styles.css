@@ -1,17 +1,21 @@
 .col-lg-12{
     display: flex;
     justify-content: center;
-    color: white;
-    padding-bottom: 50px;
+    color: black;
+    padding-bottom: 150px;
 }
-.col-sm-6{
+.col-md-6{
     display: flex;
+    align-content: center;
+    align-items: center;
+    align-self: center;
     justify-content: center;
-    background-size: 50px;
-    background-color: red;
-    color:white;
-    background-position: 15px;
+
 }
 body{
     background-color: lightblue;
+}
+.container3{
+    display: space-around;
+    
 }
