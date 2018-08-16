@@ -19,27 +19,32 @@
             </div>
             <div class="container2">
                 <div class="row2"> 
-                        <select class= "col-lg-11">
+                        <select class= "col-md-5">
                             <!-- <option value="volvo">Volvo</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
                             <option value="audi">Audi</option> -->
                         </select>
-                    <button> Convert!</button>
+                        <select id="selector2"class= "col-md-5">
+                            <!-- <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option> -->
+                        </select>
+                        
+                   <div class="row3">
+                        <div class="col-md-4">
+                            Your Money
+                            <input class= "urMoney" placeholder="How Much You Have">
+                        </div>         
+                        <div class="col-md-4">
+                            Their Money
+                            <input class="theirMoney" placeholder="How Much You Need">  
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="container3">
-                <div class="row3">
-                    <div class="col-md-6">
-                        Your Money
-                        <input class= "urMoney" placeholder="How Much You Have">   
-                    <div class="col-md-6">
-                        Their Money
-                        <input class="theirMoney" placeholder="How Much You Need">
-                    </div>
-                    </div>
-                </div>
-            </div>
+            <button> Convert!</button>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
   </body>

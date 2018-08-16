@@ -2,20 +2,12 @@
     display: flex;
     justify-content: center;
     color: black;
-    padding-bottom: 150px;
 }
-.col-md-6{
-    display: flex;
+.col-md-4{
+    display: inline-flex;
     align-content: center;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-
+    align-items: center; 
 }
 body{
     background-color: lightblue;
-}
-.container3{
-    display: space-around;
-    
 }

@@ -3,12 +3,19 @@
 axios.get('https://api.exchangeratesapi.io/latest')
   .then(function (result) {
     console.log(result.data.rates)
-    document.querySelector('.container')
+    document.querySelector('.container2')
     for ( let rateKey in result.data.rates){
         var option = document.createElement('option')
         option.value = result.data.rates[rateKey]
         option.text = rateKey
         document.querySelector('select').appendChild(option)
+    }
+    document.querySelector('.container2')
+    for ( let rateKey in result.data.rates){
+        var option = document.createElement('option')
+        option.value = result.data.rates[rateKey]
+        option.text = rateKey
+        document.querySelector('#selector2').appendChild(option)
     }
     var button = document.querySelector('button')
     button.addEventListener('click', function(){
