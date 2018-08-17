@@ -18,7 +18,9 @@ axios.get('https://api.exchangeratesapi.io/latest')
         document.querySelector('#selector2').appendChild(option)
     }
     var button = document.querySelector('button')
-    button.addEventListener('click', function(){
+    button.addEventListener('click', function(event){
+        var local = document.querySelector('.urMoney')
+        localStorage.setItem('Your Moneyzzz', local.value)
         var e = document.querySelector("select");
         var selectedExchange = e.options[e.selectedIndex].value;
         document.querySelector('.theirMoney').value = parseFloat(document.querySelector('.urMoney').value) * parseFloat(selectedExchange)

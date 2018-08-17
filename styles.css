@@ -1,13 +1,49 @@
 .col-lg-12{
     display: flex;
     justify-content: center;
-    color: black;
-}
-.col-md-4{
-    display: inline-flex;
-    align-content: center;
-    align-items: center; 
+    color: white;
+    background-color: #638fa6;
+    margin-bottom: 50px;
+    font-size: 150px;
+    text-shadow:  -7px -7px black;
 }
 body{
-    background-color: lightblue;
+    background-color: silver;
+}
+.col-md-5{
+    margin-bottom: 50px;
+}
+button{
+    margin-top: 50px;
+}
+.row2{
+    display:flex;
+    justify-content: center;
+    background-color: #638fa6;
+    border-bottom:solid black;
+}
+.row3{
+    display:flex;
+    justify-content: center;
+    
+}
+.row4{
+    display:flex;
+    justify-content: center;
+}
+p{
+    color:white;
+    background-color: #638fa6;
+    border-bottom:solid black;
+}
+input{
+    margin-bottom: 50px;
+}
+#selector2{
+    display: flex;
+    margin-left: 50px;
+}
+.theirMoney{
+    display:flex;
+    margin-left: 150px;
 }
